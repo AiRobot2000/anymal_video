@@ -1,34 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的视频页面</title>
+    <title>视频展示</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif; /* 设置字体为Arial，如果没有Arial，就使用默认的无衬线字体 */
-            text-align: center; /* 将文本对齐设置为居中 */
+        /* 设置整个页面的样式，包括字体和居中内容 */
+        body, html {
+            height: 100%;
             margin: 0;
-            padding: 0;
-            height: 100vh; /* 视口高度 */
+            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: #f0f0f0;
         }
-        h1 {
-            color: #333; /* 标题颜色 */
-        }
+
+        /* 设置视频样式，使其看起来更好 */
         video {
-            border: 1px solid #000; /* 给视频添加边框 */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* 添加阴影效果 */
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* 给视频添加阴影 */
+            border: 1px solid #ddd; /* 视频边框 */
+            border-radius: 4px; /* 边框圆角 */
         }
     </style>
 </head>
 <body>
-    <h1>欢迎观看我的视频</h1>
-    <video controls width="640" height="480">
-        <source src="anymal.mp4" type="video/mp4">
+    <!-- 视频标签，其中'src'属性需要替换为你自己的视频文件路径 -->
+    <video controls width="80%">
+        <source src="path_to_your_video.mp4" type="video/mp4">
+        您的浏览器不支持视频标签。
     </video>
 </body>
 </html>
